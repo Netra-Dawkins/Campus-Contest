@@ -56,7 +56,7 @@ body.slider__body {
   opacity: 0.3;
 }
 
-/*Slide d'accueil*/
+/*Slide d'accueil des pages experiences, competences et recommandations*/
 
 .title{
   display: flex;
@@ -81,7 +81,7 @@ body.slider__body {
   margin-bottom: auto;
   margin-left: 25px;
 }
-/*Menu page d'accueil (footer)*/
+/*Menu page d'accueil (footer) des pages experiences, competences et recommandations*/
 
 nav{
   position: absolute;
@@ -106,9 +106,6 @@ nav a, nav a:visited {
   padding: auto;
   font-size: 22px;
   margin: auto;
-
-/*Rajouter la ligne ci-dessous /!\ */
-
   transition: all 0.4s ease;
 }
 
@@ -130,7 +127,7 @@ ul.niv_1 li a:hover, ul.niv_1 li a:focus {
   font-size: 25px;
 }
 
-li{
+ul.niv_1 li{
   height: 100%;
   border-left: 1px #707070 ridge;
   border-right: 1px #707070 ridge;
@@ -138,11 +135,77 @@ li{
   box-shadow-right: 0px 1px 6px rgba(0,0,0,0.4);
 }
 
-/*Header des slides 2 à 5*/
+/*Page d'Accueil*/
+
+/*Image (logo)*/
+#ma_photo img {
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  position: absolute;
+  left: 4%;
+  top: 4%;
+  display: inline-block;
+}
+
+/*Titre de la page d'accueil*/
+body div.accueil_titres h1 {
+  position: absolute;
+  display: inline-block;
+  font-size: 120px;
+  left: 50%;
+  top: 20%;
+  color: #333333;
+}
+
+body div.accueil_titres h2 {
+  position: absolute;
+  display: inline-block;
+  font-size: 90px;
+  left: 52%;
+  top: 35%;
+  color: #333333;
+}
+
+/*couleur du fond de l'accueil*/
+body.accueil {
+  background-color: #fdb372;
+  margin: 0;
+  padding: 0
+}
+
+/*Couleurs texte footers (tous les footers des pages d'accueil)*/
+ul.niv_1 li a.lien_experiences:hover,
+ul.niv_1 li a.lien_experiences:focus {
+  color: #aefd72;
+}
+
+ul.niv_1 li a.lien_compétences:hover,
+ul.niv_1 li a.lien_compétences:focus {
+  color: #72dffd;
+}
+
+ul.niv_1 li a.lien_recommandations:hover,
+ul.niv_1 li a.lien_recommandations:focus {
+  color: #f672fd;
+}
+
+ul.niv_1 li a.lien_accueil:hover,
+ul.niv_1 li a.lien_accueil:focus {
+  color: #fdb372;
+}
+
+ul.niv_1 li a.lien_contact:hover,
+ul.niv_1 li a.lien_contact:focus {
+  color: #fd7272;
+}
+/*Slides 2 à 5 (slides de contenu)*/
+
+/*Titres des slides 2 à 5*/
 .div-title{
   margin-top: 0;
   display: flex;
-  font-size: 40px;
+  font-size: xx-large;
   width: 100%;
   height: 13%;
   box-shadow: 0px 1px 11px rgba(0,0,0,0.4);
@@ -170,16 +233,30 @@ section aside.txt{
   width: 65%;
   height: 87%;
   font-size: x-large;
-  color: #DFD9D9;
+  color: #000;
   padding-right: 2%;
   padding-left: 3%;
   padding-top: 4%;
+  text-align: justify;
 }
 
-section aside.picture{
+section aside.txt h2{
+  text-align: right;
+}
+
+section aside.picture_exp{
   width: 25%;
   height: 87%;
   padding-top: 5%;
+  padding-right: 3%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+section aside.picture_reco{
+  width: 25%;
+  height: 87%;
+  padding-top: 6%;
   padding-right: 3%;
   padding-left: 2%;
   text-align: center;
@@ -192,69 +269,140 @@ section aside.picture{
   border-radius: 40px;
 }
 
-/*couleurs du background*/
-
-.exp1, .exp2, .exp3, .exp4{
-    background: linear-gradient(#333333, #464646);
+/*Sliders 2 à 4 page compétences*/
+/*Titre sliders "Autres compétences" et "Langages"*/
+.comp_title{
+  margin-top: 0;
+  display: flex;
+  font-size: xx-large;
+  width: 100%;
+  height: 20%;
+  /*color: #DFD9D9;*/
 }
 
-/*Accueil*/
-
-#ma_photo img {
-	height: 700px;
-	width: 700px;
-	border-radius: 50%;
-	position: absolute;
-	left: 4%;
-	top: 4%;
-	display: inline-block;
+.slider_comp_title{
+  text-transform: uppercase;
+  margin: auto;
 }
 
-body div.accueil_titres h1 {
-	position: absolute;
-	display: inline-block;
-	font-size: 120px;
-	left: 50%;
-	top: 20%;
-	color: #333333;
+/*Titres slider "Qualités et défauts"*/
+
+.quali_def_title{
+  display: flex;
+  width: 100%;
+  height: 20%;
 }
 
-body div.accueil_titres h2 {
-	position: absolute;
-	display: inline-block;
-	font-size: 90px;
-	left: 52%;
-	top: 35%;
-	color: #333333;
+/*Titre pour "Qualités" et "Défauts" */
+.quali_title, .def_title{
+  margin: auto;
+  display: flex;
+  font-size: xx-large;
+  width: 50%;
+  height: 20%;
+  /*color: #DFD9D9;*/
 }
 
-body.accueil {
-	background-color: #fdb372;
-	margin: 0;
-	padding: 0
+.slider_quali_title, .slider_def_title{
+  text-transform: uppercase;
+  margin: auto;
 }
 
-ul.niv_1 li a.lien_experiences:hover,
-ul.niv_1 li a.lien_experiences:focus {
-	color: #aefd72;
+/*Corps slider autres compétences*/
+
+ul.list_comp_sec{
+  position: absolute;
+  display: block;
+  width: 92%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-ul.niv_1 li a.lien_compétences:hover,
-ul.niv_1 li a.lien_compétences:focus {
-	color: #72dffd;
+ul.list_comp_sec li{
+  font-size: x-large;
+  text-decoration: none;
+  text-align: justify;
+  /*color: #DFD9D9;*/
 }
 
-ul.niv_1 li a.lien_recommandations:hover,
-ul.niv_1 li a.lien_recommandations:focus {
-	color: #f672fd;
+div.comp_sec{
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 3%;
+  height: 80%;
 }
 
-ul.niv_1 li a.lien_accueil:hover,
-ul.niv_1 li a.lien_accueil:focus {
-	color: #fdb372;
+/*Corps slider qualités et défauts*/
+div.qualites_defauts{
+  display: flex;
+  height: 80%;
+  width: 100%;
 }
 
-ul.niv_1 li a.lien_contact:hover,
-ul.niv_1 li a.lien_contact:focus {
-	color: #fd7272;
+div.qualites, div.defauts{
+  margin: auto;
+  /*color: #DFD9D9;*/
+  width: 50%;
+  height: 80%;
+  font-size: 34px;
+}
+
+div.qualites ul, div.defauts ul{
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.qualites{
+  border-right: 1px #707070 ridge;
+  box-shadow-right: 0px 1px 6px rgba(0,0,0,0.4);
+}
+
+div.defauts{
+  border-left: 1px #707070 ridge;
+  box-shadow-left: 0px 1px 6px rgba(0,0,0,0.4);
+}
+
+/*couleurs du background et du texte (pages expériences)*/
+section.exp1{
+  background: linear-gradient(#aefd72, #8FCF5D);
+}
+section.exp2{
+  background: linear-gradient(#8FCF5D, #6FA049);
+}
+section.exp3{
+  background: linear-gradient(#6FA049, #547B36);
+}
+section.exp4{
+  background: linear-gradient(#547B36, #385F1A);
+}
+
+/*couleurs du background et du texte (pages compétences)*/
+section.comp1{
+  background: linear-gradient(#69D4F1, #5CBBD5);
+  color: #F0EEEE;
+}
+section.comp2{
+  background: linear-gradient(#5CBBD5, #4995AA);
+  color: #F0EEEE;
+}
+section.comp3{
+  background: linear-gradient(#4995AA, #387A8C);
+  color: #F0EEEE;
+}
+
+/*couleurs du background et du texte (pages recommandations)*/
+section.reco1{
+  background: linear-gradient(#f672fd, #464646);
+}
+section.reco2{
+  background: linear-gradient(#333333, #464646);
+}
+section.reco3{
+  background: linear-gradient(#333333, #464646);
+}
+section.reco4{
+  background: linear-gradient(#333333, #464646);
 }
