@@ -1,4 +1,4 @@
-/*Slider*/
+Slider*/
 body,
 html {
   height: 100%;
@@ -66,7 +66,7 @@ body.slider__body {
 
 .enfant{
   margin: auto;
-  font-size: 128px;
+  font-size: 116px;
   color: #FFD;
   display: flex;
 }
@@ -137,35 +137,54 @@ ul.niv_1 li{
 
 /*Page d'Accueil*/
 
-/*Image (logo)*/
-#ma_photo img {
+body.accueil div.title div.enfant img{
   height: 600px;
   width: 600px;
-  border-radius: 50%;
+  border-radius: 300px;
+/*  position: relative;*/
+}
+
+body.accueil div.title div.enfant{
+  margin-top: 6.5%;
   position: absolute;
-  left: 4%;
-  top: 4%;
-  display: inline-block;
+  margin-left: 5%;
+}
+
+body.accueil div.title div.enfant h1{
+  font-size: 100px;
+  color: #333;
+}
+
+body.accueil div.title div.enfant h2{
+  color: #333;
+  font-size: 75px;
+  margin-top: 22%;
+  position: absolute;
+  left: 40%;
+  margin-left: 50%;
+}
+
+body.accueil div.title div.enfant h1, body.accueil div.title div.enfant h2{
+  margin-left: 5%;
 }
 
 /*Titre de la page d'accueil*/
-body div.accueil_titres h1 {
-  position: absolute;
-  display: inline-block;
-  font-size: 120px;
-  left: 50%;
-  top: 20%;
+/*body div.accueil_titres{
+  margin: auto;
+  margin-left: 0;
+}
+
+body div.accueil_titres h1{
+  margin: auto;
+  font-size: 106px;
   color: #333333;
 }
 
 body div.accueil_titres h2 {
-  position: absolute;
-  display: inline-block;
-  font-size: 90px;
-  left: 52%;
-  top: 35%;
+  margin: auto;
+  font-size: 72px;
   color: #333333;
-}
+}*/
 
 /*couleur du fond de l'accueil*/
 body.accueil {
@@ -232,7 +251,7 @@ section div.contenu{
 section aside.txt{
   width: 65%;
   height: 87%;
-  font-size: x-large;
+  font-size: 18px;
   color: #000;
   padding-right: 2%;
   padding-left: 3%;
@@ -242,6 +261,7 @@ section aside.txt{
 
 section aside.txt h2{
   text-align: right;
+  font-size: 36px;
 }
 
 section aside.picture_exp{
@@ -285,8 +305,76 @@ section aside.picture_reco{
   margin: auto;
 }
 
-/*Titres slider "Qualités et défauts"*/
+/*Corps slider "Langages"*/
+div.lang{
+display: flex;
+width: 100%;
+height: 80%;
+margin-left: 3%;
+margin-right: 3%;
+}
 
+/*Espace de liste des langages*/
+aside.list_lang{
+  margin: auto;
+  padding: 0;
+  padding-left: 10%;
+  width: 20%;
+  height: 80%;
+}
+
+aside.list_lang ul{
+  list-style-type: none;
+  font-size: xx-large;
+  text-align: right;
+  margin: 0;
+}
+
+/*Espace des barrres*/
+div.barre_lang{
+  margin: auto;
+  padding: 0;
+  padding-left: 5%;
+  width: 80%;
+  height: 80%;
+  font-size: x-large;
+}
+
+div.barre_lang ul{
+  list-style-type: none;
+  margin: 0;
+}
+
+/*Barres*/
+div.barre_lang ul img{
+  margin-bottom: 0.75%;
+}
+
+/*Corps slider "Autres compétences"*/
+
+ul.list_comp_sec{
+  position: absolute;
+  display: block;
+  width: 92%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul.list_comp_sec li{
+  font-size: 22px;
+  text-decoration: none;
+  text-align: justify;
+}
+
+div.comp_sec{
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 3%;
+  height: 80%;
+}
+
+/*Titres slider "Qualités et défauts"*/
 .quali_def_title{
   display: flex;
   width: 100%;
@@ -300,37 +388,11 @@ section aside.picture_reco{
   font-size: xx-large;
   width: 50%;
   height: 20%;
-  /*color: #DFD9D9;*/
 }
 
 .slider_quali_title, .slider_def_title{
   text-transform: uppercase;
   margin: auto;
-}
-
-/*Corps slider autres compétences*/
-
-ul.list_comp_sec{
-  position: absolute;
-  display: block;
-  width: 92%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-ul.list_comp_sec li{
-  font-size: x-large;
-  text-decoration: none;
-  text-align: justify;
-  /*color: #DFD9D9;*/
-}
-
-div.comp_sec{
-  padding-left: 4%;
-  padding-right: 4%;
-  margin-top: 3%;
-  height: 80%;
 }
 
 /*Corps slider qualités et défauts*/
@@ -342,10 +404,9 @@ div.qualites_defauts{
 
 div.qualites, div.defauts{
   margin: auto;
-  /*color: #DFD9D9;*/
   width: 50%;
   height: 80%;
-  font-size: 34px;
+  font-size: 32px;
 }
 
 div.qualites ul, div.defauts ul{
@@ -356,16 +417,16 @@ div.qualites ul, div.defauts ul{
 }
 
 div.qualites{
-  border-right: 1px #707070 ridge;
+  border-right: 1px #B1B1B1 ridge;
   box-shadow-right: 0px 1px 6px rgba(0,0,0,0.4);
 }
 
 div.defauts{
-  border-left: 1px #707070 ridge;
+  border-left: 1px #B1B1B1 ridge;
   box-shadow-left: 0px 1px 6px rgba(0,0,0,0.4);
 }
 
-/*couleurs du background et du texte (pages expériences)*/
+/*couleurs du background (pages expériences)*/
 section.exp1{
   background: linear-gradient(#aefd72, #8FCF5D);
 }
@@ -393,16 +454,339 @@ section.comp3{
   color: #F0EEEE;
 }
 
-/*couleurs du background et du texte (pages recommandations)*/
+/*couleurs du background (pages recommandations)*/
 section.reco1{
-  background: linear-gradient(#f672fd, #464646);
+  background: linear-gradient(#f672fd, #D763DE);
 }
 section.reco2{
-  background: linear-gradient(#333333, #464646);
+  background: linear-gradient(#D763DE, #B654BC);
 }
 section.reco3{
-  background: linear-gradient(#333333, #464646);
+  background: linear-gradient(#B654BC, #9F4AA4);
 }
 section.reco4{
-  background: linear-gradient(#333333, #464646);
+  background: linear-gradient(#9F4AA4, #803085);
 }
+
+/*Police d'écriture*/
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Responsive*/
+
+@media(min-width: 100px) and (max-width: 1500px){
+  body.accueil div.title div.enfant h2{
+    font-size: 50px;
+    left: 50%;
+  }
+
+  body.accueil div.title div.enfant h1{
+    font-size: 75px;
+    top: 20%;
+  }
+}
+
+@media(max-height: 800px){
+  body.accueil div.title div.enfant img{
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media(min-width: 480px) and (max-width: 600px){
+  body.accueil div.title div.enfant img{
+    height: 400px;
+    width: 400px;
+  }
+  
+  .enfant{
+    font-size: 28px;
+  }
+
+  .enfant img{
+    width:120px;
+  }
+
+  .div-title, .comp_title, .quali_title, .def_title{
+    font-size: medium;
+  }
+
+  section aside.txt h2 {
+    font-size: 20px;
+  }
+
+  ul.niv_1 li a:hover, ul.niv_1 li a:focus {
+    font-size: 10px;
+  }
+
+  section aside.txt{
+
+  font-size: 13px;
+  overflow: auto;
+  height: 130px;
+  margin-top: 15px;
+  padding-top: 0;
+  padding-left: 40px;
+  }
+
+  section.reco1 aside.txt, section.reco2 aside.txt, section.reco3 aside.txt, section.reco4 aside.txt{
+    padding-top: 15px;
+  }
+
+  section aside.picture_reco{
+    padding-top: 11%;
+  }
+
+  nav a, nav a:visited{
+    font-size: 10px;
+  }
+
+  aside.list_lang ul{
+    font-size: large;
+  }
+
+  div.comp_sec {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  ul.list_comp_sec{
+    width: 87%;
+    padding-left: 20px;
+    height: 130px;
+    overflow: auto;
+  }
+  ul.list_comp_sec li{
+    font-size: 13px;
+  }
+
+  div.qualites, div.defauts {
+    font-size: 12px;
+  }
+
+}
+
+@media(min-width: 600px) and (max-width: 768px){
+  body.accueil div.title div.enfant img{
+    height: 400px;
+    width: 400px;
+  }
+
+  .enfant{
+    font-size: 28px;
+  }
+
+  .enfant img{
+    width:120px;
+  }
+
+  .div-title, .comp_title, .quali_title, .def_title{
+    font-size: medium;
+  }
+
+  section aside.txt h2 {
+    font-size: 20px;
+  }
+
+  ul.niv_1 li a:hover, ul.niv_1 li a:focus {
+    font-size: 10px;
+  }
+
+  section aside.txt{
+
+  font-size: 13px;
+  overflow: auto;
+  height: 130px;
+  margin-top: 30px;
+  padding-top: 0;
+  padding-left: 40px;
+  }
+
+  section.reco1 aside.txt, section.reco2 aside.txt, section.reco3 aside.txt, section.reco4 aside.txt{
+    padding-top: 15px;
+  }
+
+  section aside.picture_reco{
+    padding-top: 11%;
+  }
+
+  nav a, nav a:visited{
+    font-size: 10px;
+  }
+
+  aside.list_lang ul{
+    font-size: large;
+  }
+
+  div.comp_sec {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  ul.list_comp_sec{
+    width: 87%;
+    padding-left: 20px;
+    height: 130px;
+    overflow: auto;
+  }
+  ul.list_comp_sec li{
+    font-size: 13px;
+  }
+
+  div.qualites, div.defauts {
+    font-size: 12px;
+  }
+
+}
+
+@media(min-width: 768px) and (max-width: 900px){
+  .enfant{
+    font-size: 50px;
+  }
+
+  .div-title, .comp_title, .quali_title, .def_title{
+    font-size: x-large;
+  }
+
+  section aside.txt h2 {
+    font-size: 24px;
+  }
+
+  ul.niv_1 li a:hover, ul.niv_1 li a:focus {
+    font-size: 16px;
+  }
+
+  section aside.txt{
+    font-size: 13px;
+  }
+
+  nav a, nav a:visited{
+    font-size: 16px;
+  }
+
+  aside.list_lang ul{
+    font-size: large;
+  }
+
+  div.comp_sec {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  ul.list_comp_sec{
+    width: 87%;
+    padding-left: 20px;
+  }
+  ul.list_comp_sec li{
+    font-size: 13px;
+  }
+
+  div.qualites, div.defauts {
+    font-size: 18px;
+  }
+
+}
+
+@media(min-width: 900px) and (max-width: 1100px){
+  .enfant{
+    font-size: 60px;
+  }
+
+  .div-title, .comp_title, .quali_title, .def_title{
+    font-size: x-large;
+  }
+
+  section aside.txt h2 {
+    font-size: 28px;
+  }
+
+  ul.niv_1 li a:hover, ul.niv_1 li a:focus {
+    font-size: 16px;
+  }
+
+  section aside.txt{
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  nav a, nav a:visited{
+    font-size: 16px;
+  }
+
+  aside.list_lang ul{
+    font-size: large;
+  }
+
+  div.comp_sec {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  ul.list_comp_sec{
+    width: 87%;
+    padding-left: 20px;
+  }
+  ul.list_comp_sec li{
+    font-size: 15px;
+  }
+
+  div.qualites, div.defauts {
+    font-size: 24px;
+  }
+
+}
+
+@media(min-width: 1100px) and (max-width: 1328px){
+/*  body.accueil div.title div.enfant h1{
+    font-size: 50px;
+  }*/
+
+  .enfant{
+    font-size: 84px;
+  }
+
+  .div-title, .comp_title, .quali_title, .def_title{
+    font-size: xx-large;
+  }
+
+  section aside.txt h2 {
+    font-size: 34px;
+  }
+
+  ul.niv_1 li a:hover, ul.niv_1 li a:focus {
+    font-size: 20px;
+  }
+
+  section aside.txt{
+    font-size: 18px;
+  }
+
+  nav a, nav a:visited{
+    font-size: 18px;
+  }
+
+  aside.list_lang ul{
+    font-size: large;
+  }
+
+  div.comp_sec {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  ul.list_comp_sec{
+    width: 87%;
+    padding-left: 20px;
+  }
+  ul.list_comp_sec li{
+    font-size: 19px;
+  }
+
+  div.qualites, div.defauts {
+    font-size: 26px;
+  }
+
+}
+
