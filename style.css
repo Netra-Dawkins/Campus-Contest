@@ -476,6 +476,12 @@ section.reco4{
 
 /*Responsive*/
 
+@media(min-width: 1328px) and (max-width: 1510px){
+  div.barre_lang img#htmlcss{
+    margin-bottom: 50px;
+  }
+}
+
 @media(min-width: 100px) and (max-width: 1500px){
   body.accueil div.title div.enfant h2{
     font-size: 50px;
