@@ -1,0 +1,260 @@
+/*Slider*/
+body,
+html {
+  height: 100%;
+}
+
+body.slider__body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slider__container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.slider__page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*margin-left: 40px;*/
+}
+
+.slider__indicators {
+  position: fixed;
+  left: 18px;
+  top: 50%;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.slider__indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 100px;
+  background-color: #fff;
+  cursor: default;
+}
+.slider__indicator--active {
+  opacity: 0.3;
+}
+
+/*Slide d'accueil*/
+
+.title{
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+.enfant{
+  margin: auto;
+  font-size: 128px;
+  color: #FFD;
+  display: flex;
+}
+
+.enfant img{
+  border-radius: 300px;
+  position: relative;
+}
+
+.enfant span{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 25px;
+}
+/*Menu page d'accueil (footer)*/
+
+nav{
+  position: absolute;
+  box-shadow: 0px 1px 11px rgba(0,0,0,0.4);
+  bottom: 0px;
+  width: 100%;
+  height: 10%;
+  background-color: #333333;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a, nav a:visited {
+  display: flex;
+  text-decoration: none;
+  color: #DFD9D9; ;
+  text-transform: uppercase;
+  padding: auto;
+  font-size: 22px;
+  margin: auto;
+
+/*Rajouter la ligne ci-dessous /!\ */
+
+  transition: all 0.4s ease;
+}
+
+ul.niv_1 {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  height: 60%;
+}
+
+ul.niv_1 > li {
+  display: flex;
+  position: relative;
+  width: 25%;
+}
+
+ul.niv_1 li a:hover, ul.niv_1 li a:focus {
+  font-size: 25px;
+}
+
+li{
+  height: 100%;
+  border-left: 1px #707070 ridge;
+  border-right: 1px #707070 ridge;
+  box-shadow-left: 0px 1px 6px rgba(0,0,0,0.4);
+  box-shadow-right: 0px 1px 6px rgba(0,0,0,0.4);
+}
+
+/*Header des slides 2 à 5*/
+.div-title{
+  margin-top: 0;
+  display: flex;
+  font-size: 40px;
+  width: 100%;
+  height: 13%;
+  box-shadow: 0px 1px 11px rgba(0,0,0,0.4);
+  color: #DFD9D9 ;
+  background-color: #333333;
+}
+
+.slider-title{
+  text-transform: uppercase;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px #707070 ridge;
+  border-right: 1px #707070 ridge;
+  box-shadow-left: 0px 1px 6px rgba(0,0,0,0.4);
+  box-shadow-right: 0px 1px 6px rgba(0,0,0,0.4);
+}
+
+/*Corps des sliders 2 à 5*/
+section div.contenu{
+  display: flex;
+}
+
+section aside.txt{
+  width: 65%;
+  height: 87%;
+  font-size: x-large;
+  color: #DFD9D9;
+  padding-right: 2%;
+  padding-left: 3%;
+  padding-top: 4%;
+}
+
+section aside.picture{
+  width: 25%;
+  height: 87%;
+  padding-top: 5%;
+  padding-right: 3%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+.image{
+  box-shadow: 0px 1px 11px rgba(0,0,0,0.4);
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+/*couleurs du background*/
+
+.exp1, .exp2, .exp3, .exp4{
+    background: linear-gradient(#333333, #464646);
+}
+
+/*Accueil*/
+
+#ma_photo img {
+	height: 700px;
+	width: 700px;
+	border-radius: 50%;
+	position: absolute;
+	left: 4%;
+	top: 4%;
+	display: inline-block;
+}
+
+body div.accueil_titres h1 {
+	position: absolute;
+	display: inline-block;
+	font-size: 120px;
+	left: 50%;
+	top: 20%;
+	color: #333333;
+}
+
+body div.accueil_titres h2 {
+	position: absolute;
+	display: inline-block;
+	font-size: 90px;
+	left: 52%;
+	top: 35%;
+	color: #333333;
+}
+
+body.accueil {
+	background-color: #fdb372;
+	margin: 0;
+	padding: 0
+}
+
+ul.niv_1 li a.lien_experiences:hover,
+ul.niv_1 li a.lien_experiences:focus {
+	color: #aefd72;
+}
+
+ul.niv_1 li a.lien_compétences:hover,
+ul.niv_1 li a.lien_compétences:focus {
+	color: #72dffd;
+}
+
+ul.niv_1 li a.lien_recommandations:hover,
+ul.niv_1 li a.lien_recommandations:focus {
+	color: #f672fd;
+}
+
+ul.niv_1 li a.lien_accueil:hover,
+ul.niv_1 li a.lien_accueil:focus {
+	color: #fdb372;
+}
+
+ul.niv_1 li a.lien_contact:hover,
+ul.niv_1 li a.lien_contact:focus {
+	color: #fd7272;
+}
